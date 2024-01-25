@@ -1,6 +1,6 @@
 import os
 
-BASE_PATH = "C:\programming\Programming\Python\d\handwriting-synthesis\model"
+BASE_PATH = "C:\Programming\Python\d\handwriting-synthesis\model"
 BASE_DATA_PATH = "data"
 
 data_path: str = os.path.join(BASE_PATH, BASE_DATA_PATH)

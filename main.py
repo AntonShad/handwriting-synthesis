@@ -53,7 +53,7 @@ if __name__ == '__main__':
         lines=lines,
         biases=biases,
         styles=styles,
-    )
+    )   
 
     # demo number 2 - fixed bias, varying style
     lines = downtown.split("\n")
@@ -78,3 +78,22 @@ if __name__ == '__main__':
         biases=biases,
         styles=styles,
     )
+
+
+    lines = """This is handwritten by a machine.
+    Hello world!
+    Best regards Skytech Marketing department."""
+
+
+    lines = lines.split("\n")
+    biases = [.75 for i in lines]
+    styles = [12 for i in lines]
+
+    hand.write(
+        filename='img/test.svg',
+        lines=lines,
+        biases=biases,
+        styles=styles,
+    )
+
+    #hand.write(lines = lines, biases = biases, styles = styles)
